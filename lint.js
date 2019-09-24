@@ -1,7 +1,7 @@
 // Run eslint from Node for debugging
 const CLIEngine = require('eslint').CLIEngine
 
-const lodashToNativePlugin = require('./lib/index')
+const lodashToNativePlugin = require('./lib')
 
 const cli = new CLIEngine({
   envs: ['es6'],
