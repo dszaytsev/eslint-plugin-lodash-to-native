@@ -8,7 +8,9 @@ const cli = new CLIEngine({
   plugins: ['eslint-plugin-lodash-to-native'],
   useEslintrc: false,
   rules: {
+    'indent': ["error", 2],
     'lodash-to-native/map': 2,
   }
 })
 cli.addPlugin('eslint-plugin-lodash-to-native', lodashToNativePlugin)
+cli.executeOnFiles(['app/index.js'])

@@ -12,10 +12,9 @@
   "scripts": {
     "test": "mocha tests --recursive"
   },
-  "dependencies": {},
   "devDependencies": {
-    "eslint": "^6.4.0",
-    "mocha": "^3.5.3"
+    "mocha": "^6.2.0",
+    "eslint": "^6.4.0"
   },
   "engines": {
     "node": ">=8"
