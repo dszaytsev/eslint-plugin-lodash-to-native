@@ -7,8 +7,8 @@ This rule aims to `_.map([], mapFn)`
 Examples of **incorrect** code for this rule:
 
 
-```
-js_.map([1, 2, 3, 4], () => {})
+```js
+_.map([1, 2, 3, 4], () => {})
 ```
 
 ```js

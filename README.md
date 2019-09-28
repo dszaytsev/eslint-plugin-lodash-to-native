@@ -45,7 +45,10 @@ Then configure the rules you want to use under the rules section.
 
 * map — checks `_.map` method and fixes it with native `Array.prototype.map` if can
 
+## Tests
 
+To run tests run command
 
-
-
+```
+$ npm run tests
+```
