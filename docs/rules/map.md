@@ -1,36 +1,66 @@
 # Check lodash map method (map)
 
-Please describe the origin of the rule here.
-
-
 ## Rule Details
 
-This rule aims to...
+This rule aims to `_.map([], mapFn)`
 
 Examples of **incorrect** code for this rule:
 
+
+```
+js_.map([1, 2, 3, 4], () => {})
+```
+
 ```js
+const array = [1, 2, 3, 4]
 
-// fill me in
+_.map(array, mapFn)
+```
 
+```js
+import { array } from '...'
+
+_.map(array, mapFn)
+```
+
+```js
+_.map(object, mapFn)
+
+const object = {}
 ```
 
 Examples of **correct** code for this rule:
 
 ```js
-
-// fill me in
-
+_.map({}, mapFn)
 ```
 
-### Options
+```js
+const object = {}
 
-If there are any options, describe them here. Otherwise, delete this section.
+_.map(object, mapFn)
+```
+
+
+```js
+_.map({}, mapFn)
+
+const object = {}
+```
+
+```js
+_.map(array, mapFn)
+
+const array = []
+```
+
+```js
+const _ = { map() { } }
+
+_.map([], mapFn)
+```
+
 
 ## When Not To Use It
 
-Give a short description of when it would be appropriate to turn off this rule.
-
-## Further Reading
-
-If there are other links that describe the issue this rule addresses, please include them here in a bulleted list.
+When Array has no map method
